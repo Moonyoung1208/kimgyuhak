@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실무 전문가 김규학 박사</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">김규학<span>.</span></div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#vision">VISION</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="slider-container" id="home">
+        <div class="slide active slide1">
+            <div class="slide-bg">
+                <img src="./img/slide1.png" alt="슬라이드이미지1" class="pc-slide">
+                <img src="./img/mobile1.png" alt="모바일이미지1" class="mobile-slide">
+            </div>
+            <div class="slide-content">
+                <h2>주민과 함께 주민 먼저</h2>
+                <h1>동네일은 최고! <br> 행동하는 사람, 김규학</h1>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="slide-bg">
+                <img src="./img/slide2.png" alt="슬라이드이미지2" class="pc-slide">
+                <img src="./img/mobile2.png" alt="모바일이미지2" class="mobile-slide">
+            </div>
+            <div class="slide-content">
+                <h2>의회를 아는 실무 전문가</h2>
+                <h1>토론은 치열하게 <br> 결과는 확실하게</h1>
+            </div>
+        </div>
+        <div class="slide slide3">
+            <div class="slide-bg">
+                <img src="./img/slide3.png" alt="슬라이드이미지3" class="pc-slide">
+                <img src="./img/mobile3.png" alt="모바일이미지3" class="mobile-slide">
+            </div>
+            <div class="slide-content">
+                <h2>제 5 · 6 · 7대 대구광역시의회 의원</h2>
+                <h1>경북대학교 겸임교수 <br> 대구 보건대학교 겸임교수</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about" style="background: white;">
+
+        <div class="full-width">
+            <div class="title-area">
+                <h3>Expertise</h3>
+                <p>실무와 이론을 겸비한 박사 정치인 김규학</p>
+            </div>
+
+            <div class="tab-menu">
+                <div class="tab-btn active" onclick="openTab(event, 'career')">의정 경력</div>
+                <div class="tab-btn" onclick="openTab(event, 'academic')">학술 성과</div>
+                <div class="tab-btn" onclick="openTab(event, 'social')">사회 활동</div>
+            </div>
+
+            <div id="career" class="tab-content active">
+                <div class="info-card">
+                    <h4>의회 실무의 베테랑</h4>
+                    <p>제 5, 6, 7대 대구광역시의회 의원을 역임하며 현장의 목소리를 정책으로 바꾸어 왔습니다. 예산 집행부터 조례 제정까지, 의회의 메커니즘을 누구보다 정확히 꿰뚫고 있습니다.
+                    </p>
+                </div>
+                <img src="./img/expertise3.jpg" alt="대구이미지" class="tab-img">
+            </div>
+
+            <div id="academic" class="tab-content">
+                <div class="info-card">
+                    <h4>정치와 복지의 융합</h4>
+                    <p>경북대학교 정치학 박사, 대구한의대학교 사회복지학 박사 학위를 취득했습니다. 데이터에 기반한 정책 기획과 인간 중심의 복지 행정을 동시에 실현합니다.</p>
+                </div>
+                <img src="./img/expertise2.jpg" alt="대구이미지" class="tab-img">
+            </div>
+
+            <div id="social" class="tab-content">
+                <div class="info-card">
+                    <h4>글로벌 & 로컬 거버넌스</h4>
+                    <p>UN WDF 한국 SDG 경영자포럼 중앙회장으로서 지속가능한 발전 목표를 연구하고, 공공정책 평가협회를 통해 지역 발전을 위한 감시와 대안 제시를 멈추지 않습니다.</p>
+                </div>
+                <img src="./img/expertise1.jpg" alt="대구이미지" class="tab-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="visions-section section">
+        <div class="full-width">
+            <div class="title-area">
+                <h3>북구의 비전</h3>
+                <p>대구광역시 북구의 기회와 미래의 비전</p>
+            </div>
+            <div class="grid3">
+                <div class="vision-card">
+                    <div class="vision-title">산업과 일자리가 넘치는 북구</div>
+                    <img src="./img/vision1.png" alt="비전이미지1">
+                    <div>
+                        청년 창업 지원 클러스터 구축을 통한 <br>
+                        미래형 일자리 1만 개 창출 기틀 마련
+                    </div>
+                    <button>자세히보기 +</button>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-title">사회복지 박사가 설계하는 북구</div>
+                    <img src="./img/vision2.png" alt="비전이미지2">
+                    <div>
+                        사회복지학 박사의 전문 지식을 바탕으로 <br>
+                        사각지대 제로화 시스템 구축
+                    </div>
+                    <button>자세히보기 +</button>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-title">교육이 강한 북구</div>
+                    <img src="./img/vision3.png" alt="비전이미지3">
+                    <div>
+                        경북대학교 등 지역 대학과 상생하는 교육 도시 <br>
+                        글로벌 인재 양성을 위한 시스템 활성화
+                    </div>
+                    <button>자세히보기 +</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promise-grid" id="vision">
+        <div class="promise-item promise-bg1">
+            <span class="num">01</span>
+            <div class="promise-inner">
+                <h5>경제 혁신</h5>
+                <div class="detail">
+                    <p>• 지역 상권 활성화 전략 수립</p>
+                    <p>• 청년 창업 지원 클러스터 조성</p>
+                    <p>• 실무 전문가 중심의 기업 유치</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="promise-item promise-bg2">
+            <span class="num">02</span>
+            <div class="promise-inner">
+                <h5>복지 안심</h5>
+                <div class="detail">
+                    <p>• 사회복지학 박사의 촘촘한 설계</p>
+                    <p>• 독거노인 돌봄 스마트 시스템</p>
+                    <p>• 사각지대 없는 긴급 복지 지원</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="promise-item promise-bg3">
+            <span class="num">03</span>
+            <div class="promise-inner">
+                <h5>미래 교육</h5>
+                <div class="detail">
+                    <p>• 겸임교수 경험 기반 교육 혁신</p>
+                    <p>• 방과 후 고품격 특성화 프로그램</p>
+                    <p>• 지역 대학 연계 인재 양성</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="promise-item promise-bg4">
+            <span class="num">04</span>
+            <div class="promise-inner">
+                <h5>지속 가능</h5>
+                <div class="detail">
+                    <p>• UN SDG 기반 도시 발전 모델</p>
+                    <p>• 친환경 에너지 자립형 마을</p>
+                    <p>• 투명한 의정 활동 실시간 공유</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="bukgu-glance">
+        <div class="title-area">
+            <h3>대구 북구 한눈에 보기<span>.</span></h3>
+        </div>
+
+        <div class="bukgu-overview">
+            <div class="overview-item">
+                <div class="item-icon">
+                    <img src="./img/bukgu-icon1.png" alt="인구아이콘">
+                </div>
+                <h4>인구와 세대</h4>
+                <p>
+                    면적 인구 : 93.98㎢ (100%)
+                    주거지역 20.14㎢ (21.43%)
+                    상업지역 3.51㎢ (3.74%)
+                    공업지역 5.01㎢ (5.33%)
+                    녹지지역 5.01㎢ (5.33%)
+                    인구수 409,854
+                </p>
+            </div>
+            <div class="overview-item">
+                <div class="item-icon">
+                    <img src="./img/bukgu-icon2.png" alt="커뮤니티아이콘">
+                </div>
+                <h4>지역 특색</h4>
+                <p>고속도로, 철도, 도시철도3호선,
+                    공항이 연계된 교통의 요충지이자 대구의 관문
+                    EXCO, 대구종합유통단지 등이 소재한 마이스산업 도시 및 영남권 물류유통의 중심지
+                    도심융합특구 조성 본격화, 도시철도 4호선 건설을 통한 미래성장동력 확보</p>
+            </div>
+            <div class="overview-item">
+                <div class="item-icon">
+                    <img src="./img/bukgu-icon3.png" alt="교육아이콘">
+                </div>
+                <h4>교육과 문화</h4>
+                <p>대구오페라하우스, 경북대학교, 영진전문대학교, 대구보건대학교, 대구과학대학교, 대구복합스포츠타운 등 문화․교육․체육 인프라가 잘 구축된 도시</p>
+            </div>
+            <div class="overview-item">
+                <div class="item-icon">
+                    <img src="./img/bukgu-icon4.png" alt="성장아이콘">
+                </div>
+                <h4>성장 동력</h4>
+                <p>대구로봇산업의 메카 로봇산업클러스터,
+                    도시형 산업단지인 대구제3산업단지 내
+                    2,529개 중소기업과 대구검단산업단지 내
+                    588개 중소기업 등이 있어
+                    첨단산업을 견인하는 메카 역할 담당</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="core-commitments">
+        <div class="full-width">
+            <div class="title-area">
+                <h3>4 MAJOR COMMITMENTS<span>.</span></h3>
+                <p>실천하는 전문가 김규학의 북구 혁신 약속</p>
+            </div>
+
+            <div class="commitment-grid">
+                <div class="com-card">
+                    <div class="com-header">
+                        <span class="com-tag">대표 공약</span>
+                        <span class="com-no">01</span>
+                    </div>
+                    <h4>대표 공약 1번</h4>
+                    <p>대표 공약 1번 내용입니다. 대표 공약 1번 내용입니다. 대표 공약 1번 내용입니다.
+                        대표 공약 1번 내용입니다. 대표 공약 1번 내용입니다.
+                    </p>
+                    <ul>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                    </ul>
+                </div>
+
+                <div class="com-card">
+                    <div class="com-header">
+                        <span class="com-tag">대표 공약</span>
+                        <span class="com-no">02</span>
+                    </div>
+                    <h4>대표 공약 2번</h4>
+                    <p>대표 공약 2번 내용입니다. 대표 공약 2번 내용입니다. 대표 공약 2번 내용입니다.
+                        대표 공약 2번 내용입니다. 대표 공약 2번 내용입니다.
+                    </p>
+                    <ul>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                    </ul>
+                </div>
+
+                <div class="com-card">
+                    <div class="com-header">
+                        <span class="com-tag">대표 공약</span>
+                        <span class="com-no">03</span>
+                    </div>
+                    <h4>대표 공약 3번</h4>
+                    <p>대표 공약 3번 내용입니다. 대표 공약 3번 내용입니다. 대표 공약 3번 내용입니다.
+                        대표 공약 3번 내용입니다. 대표 공약 3번 내용입니다.
+                    </p>
+                    <ul>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                    </ul>
+                </div>
+
+                <div class="com-card">
+                    <div class="com-header">
+                        <span class="com-tag">대표 공약</span>
+                        <span class="com-no">04</span>
+                    </div>
+                    <h4>재난 제로, 안심 안전 북구</h4>
+                    <p>대표 공약 4번 내용입니다. 대표 공약 3번 내용입니다. 대표 공약 3번 내용입니다.
+                        대표 공약 3번 내용입니다. 대표 공약 3번 내용입니다.
+                    </p>
+                    <ul>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                        <li>대표 공약 상세 내용입니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-wrap" id="contact">
+        <div class="contact-content">
+            <h2>소통하기</h2>
+            <p class="contact-sub">실무 전문가 김규학과 소통하세요.
+                <br>더 많은 활동은 SNS에서 실시간으로 확인하실 수 있습니다.
+            </p>
+
+            <div class="sns-group">
+                <a href="https://www.instagram.com/" target="_blank" class="sns-btn">
+                    <i class="fab fa-instagram"></i>
+                    <span>INSTAGRAM</span>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="sns-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>FACEBOOK</span>
+                </a>
+            </div>
+
+            <div class="contact-footer">
+                <p>토론은 치열하게, 결과는 확실하게 <strong>김규학</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 40px; text-align: center; background: #000; border-top: 1px solid #333;">
+        <p style="font-size: 0.8rem; color: #666;">© 2026 김규학. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        // Slider Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextSlide, 5000);
+
+        // Tab Logic
+        function openTab(evt, tabName) {
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach(content => content.classList.remove("active"));
+
+            const tabBtns = document.querySelectorAll(".tab-btn");
+            tabBtns.forEach(btn => btn.classList.remove("active"));
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+
+        // 1. 햄버거 버튼 클릭 시 메뉴 열기/닫기
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+
+        // 2. 메뉴 링크 클릭 시 자동으로 메뉴 닫기 (사용성 개선)
+        document.querySelectorAll('.nav-links a').forEach(n => n.addEventListener('click', () => {
+            menu.classList.remove('is-active');
+            menuLinks.classList.remove('active');
+        }));
+    </script>
+</body>
+
+</html>
