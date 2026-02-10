@@ -185,6 +185,7 @@ header {
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
 }
+
 .tab-btn:first-child {
     border-left: 1px solid #ddd;
 }
@@ -330,7 +331,7 @@ header {
     letter-spacing: 1px;
 }
 
-.visions-section .grid3{
+.visions-section .grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
@@ -370,6 +371,40 @@ header {
 }
 
 .vision-card button:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+/* 상세 내용 기본 상태: 숨김 */
+.detail-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 0 15px;
+    margin-top: 0;
+}
+
+/* 활성화 상태 */
+.vision-card.is-open .detail-content {
+    max-height: 200px;
+    /* 내용에 맞춰 조절 */
+    opacity: 1;
+    padding: 15px;
+    margin-top: 15px;
+    border-top: 1px dashed var(--primary);
+}
+
+.detail-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* 버튼 텍스트 변경을 위한 스타일 */
+.vision-card.is-open .view-more-btn {
     background-color: var(--primary);
     color: #fff;
 }
@@ -683,6 +718,43 @@ header {
     background: #fff;
 }
 
+#map {
+    padding: 120px 10%;
+}
+
+.maps-wrap {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.maps-wrap h4 {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 8px 32px;
+    width: fit-content;
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .maps-wrap {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .maps-wrap img {
+        width: 100%
+    }
+
+    .maps-wrap h4 {
+        font-size: 1rem;
+        padding: 4px 16px;
+    }
+}
+
 /* Contact Section */
 .contact-wrap {
     background: var(--primary);
@@ -910,7 +982,7 @@ header {
         font-size: 0.875rem;
     }
 
-    .visions-section .grid3{
+    .visions-section .grid3 {
         grid-template-columns: 1fr;
     }
 }

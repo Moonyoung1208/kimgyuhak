@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>실무 전문가 김규학 박사</title>
+    <title>실무 전문가 김규학</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -116,7 +116,12 @@
                         청년 창업 지원 클러스터 구축을 통한 <br>
                         미래형 일자리 1만 개 창출 기틀 마련
                     </div>
-                    <button>자세히보기 +</button>
+                    <div class="detail-content">
+                        <p>• 첨단 산업 단지 유치 및 활성화</p>
+                        <p>• 청년 창업 펀드 조성 및 컨설팅 지원</p>
+                        <p>• 지역 강소기업 맞춤형 인재 매칭 시스템</p>
+                    </div>
+                    <button class="view-more-btn">자세히보기 +</button>
                 </div>
                 <div class="vision-card">
                     <div class="vision-title">사회복지 박사가 설계하는 북구</div>
@@ -125,7 +130,12 @@
                         사회복지학 박사의 전문 지식을 바탕으로 <br>
                         사각지대 제로화 시스템 구축
                     </div>
-                    <button>자세히보기 +</button>
+                    <div class="detail-content">
+                        <p>• 첨단 산업 단지 유치 및 활성화</p>
+                        <p>• 청년 창업 펀드 조성 및 컨설팅 지원</p>
+                        <p>• 지역 강소기업 맞춤형 인재 매칭 시스템</p>
+                    </div>
+                    <button class="view-more-btn">자세히보기 +</button>
                 </div>
                 <div class="vision-card">
                     <div class="vision-title">교육이 강한 북구</div>
@@ -134,7 +144,12 @@
                         경북대학교 등 지역 대학과 상생하는 교육 도시 <br>
                         글로벌 인재 양성을 위한 시스템 활성화
                     </div>
-                    <button>자세히보기 +</button>
+                    <div class="detail-content">
+                        <p>• 첨단 산업 단지 유치 및 활성화</p>
+                        <p>• 청년 창업 펀드 조성 및 컨설팅 지원</p>
+                        <p>• 지역 강소기업 맞춤형 인재 매칭 시스템</p>
+                    </div>
+                    <button class="view-more-btn">자세히보기 +</button>
                 </div>
             </div>
         </div>
@@ -189,10 +204,25 @@
             </div>
         </div>
     </section>
+    <section class="section" id="map">
+        <div class="title-area">
+            <h3>대구 북구 지도</h3>
+        </div>
+        <div class="maps-wrap">
+            <div class="map1">
+                <h4>행정동</h4>
+                <img src="./img/map1.png" alt="대구북구">
+            </div>
+            <div class="map2">
+                <h4>법정도</h4>
+                <img src="./img/map2.png" alt="대구북구">
+            </div>
+        </div>
+    </section>
 
     <section class="section" id="bukgu-glance">
         <div class="title-area">
-            <h3>대구 북구 한눈에 보기<span>.</span></h3>
+            <h3>대구 북구 이렇게 달라져요<span>.</span></h3>
         </div>
 
         <div class="bukgu-overview">
@@ -392,6 +422,21 @@
             menu.classList.remove('is-active');
             menuLinks.classList.remove('active');
         }));
+
+        // Vision Card More Detail Logic
+        document.querySelectorAll('.view-more-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const card = this.closest('.vision-card');
+                card.classList.toggle('is-open');
+
+                // 버튼 텍스트 변경
+                if (card.classList.contains('is-open')) {
+                    this.textContent = '닫기 -';
+                } else {
+                    this.textContent = '자세히보기 +';
+                }
+            });
+        });
     </script>
 </body>
 
