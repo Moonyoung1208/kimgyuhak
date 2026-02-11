@@ -29,6 +29,10 @@ a {
     color: inherit;
 }
 
+.mobile-br {
+    display: none;
+}
+
 /* Header */
 header {
     position: fixed;
@@ -260,7 +264,6 @@ header {
 .overview-item:hover {
     transform: translateY(-10px);
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
-    /* 각진 그림자 */
     border-color: var(--primary);
 }
 
@@ -391,16 +394,20 @@ header {
     .about-grid {
         gap: 16px;
     }
+
     .about-card {
         padding: 20px;
         min-height: auto;
     }
+
     .about-card h4 {
         font-size: 14px;
     }
+
     .about-card p {
         font-size: 18px;
     }
+
     .about-card .sub-info {
         font-size: 12px;
     }
@@ -542,7 +549,6 @@ header {
     transition: var(--transition);
     display: flex;
     flex-direction: column;
-    min-height: 500px;
 }
 
 .com-header {
@@ -580,13 +586,12 @@ header {
 .com-card p {
     font-size: 0.95rem;
     color: #666;
-    margin-bottom: 30px;
     line-height: 1.6;
 }
 
 .com-card ul {
     list-style: none;
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 .com-card li {
@@ -659,8 +664,14 @@ header {
     }
 
     .bukgu-overview {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .overview-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+        border-color: var(--primary);
     }
 
     .bukgu-vision h4 {
@@ -1099,5 +1110,9 @@ header {
 
     .visions-section .grid3 {
         grid-template-columns: 1fr;
+    }
+
+    .mobile-br {
+        display: block;
     }
 }
