@@ -101,7 +101,7 @@ header {
 .slide-bg {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 450px;
     background-size: cover;
     background-position: center;
     /* filter: brightness(0.4); */
@@ -984,20 +984,19 @@ header {
     }
 
     .nav-links {
-        position: fixed;
+        display: flex;
+        position: absolute;
         right: -100%;
-        /* 평상시 화면 밖으로 밀어냄 */
         top: 0;
         flex-direction: column;
         background: #000;
-        width: 70%;
-        /* 화면의 70% 차지 */
+        width: 100%;
         height: 100vh;
         padding-top: 100px;
         align-items: center;
-        transition: 0.5s;
-        border-left: 2px solid var(--primary);
-        box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+        z-index: 1000;
+        gap: 20px;
     }
 
     .nav-links.active {
@@ -1006,7 +1005,11 @@ header {
 
     .nav-links a {
         font-size: 1.5rem;
-        margin-bottom: 30px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
@@ -1037,10 +1040,6 @@ header {
 
     header {
         padding: 20px;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .tab-content.active {
